@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #hero * {
+        border: 1px solid red;
+      }
+      #hero {
+        display: flex;
+      }
+
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- Estructura basica semantica -->
+    <!--
+    header: cabecera de la pagina
+      nav: menu de navegacion
+    main: contenido principal
+    aside: contenido secundario
+    footer: pie de pagina
+     -->
+    <header>
+      <img src="https://via.placeholder.com/50" alt="" />
+      <nav>
+        <menu>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Nuestras Ofertas</a></li>
+          <li><a href="#">Suscripciones</a></li>
+        </menu>
+      </nav>
+
+      <ul>
+        <li><a href="#">Más</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+    </header>
+    <main>
+      <!-- Contenido principal -->
+      <section id="hero">
+        <div>
+          <h1>Medium <span>length</span> hero heading goes here</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+            <strong>pariatur</strong> natus assumenda consequuntur quo dolores,
+            cupiditate similique <em>quod</em> voluptate sunt saepe
+            reprehenderit voluptatem temporibus sint numquam nisi, ut tenetur
+            commodi!
+          </p>
+          <a href="#">Conoce mas</a>
+          <a href="#">Contactate</a>
+        </div>
+
+        <img src="https://via.placeholder.com/500" alt="Imagen de hero" />
+        <!-- <figure>
+          <img src="https://via.placeholder.com/500" alt="" />
+          <figcaption>
+            holi
+          </figcaption>
+        </figure> -->
+      </section>
+
+      <section id="products">
+        <h2>Productos</h2>
+
+        <article class="flex">
+          <article>
+            <figure>
+              <img src="https://via.placeholder.com/250" alt="" />
+            </figure>
+            <h3>Titulo</h3>
+            <p>Descripcion</p>
+            <span>$55</span>
+          </article>
+          <article>
+            <figure>
+              <img src="https://via.placeholder.com/250" alt="" />
+            </figure>
+            <h3>Titulo</h3>
+            <p>Descripcion</p>
+            <span>$55</span>
+          </article>
+          <article>
+            <figure>
+              <img src="https://via.placeholder.com/250" alt="" />
+            </figure>
+            <h3>Titulo</h3>
+            <p>Descripcion</p>
+            <span>$55</span>
+          </article>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Hecho con 💖 en Nucba + Academia BA</p>
+    </footer>
+  </body>
+</html>
