@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css</title>
+    <!-- <style> -->
+    <!-- /* selector {
+      propiedad: valor;
+      propiedad: valor;
+      propiedad: valor;
+      propiedad: valor;
+    } */
+
+    /* Selector de etiqueta, aplica a todas las etiquetas */
+    /* p {
+      background: blue;
+      color: yellow;
+    } */ -->
+    <!-- /* </style> */ -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!--
+  -En linea / Interno / Externo
+  -->
+    <h1 style="color: blue">Holis</h1>
+
+    <p style="color: crimson; font-weight: 800">Hola</p>
+    <p>Hola</p>
+    <p>Hola</p>
+    <p>Hola</p>
+    <p>Hola</p>
+
+    <div class="box">
+      <p>Soy una caja</p>
+    </div>
+
+    <!-- Overflow -->
+
+    <div class="caja-overflow">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+        doloribus quaerat nisi ratione eius ex natus corporis iste earum velit
+        itaque veritatis perferendis expedita, reiciendis molestiae ab in
+        eligendi facilis odio voluptatibus. Accusamus tenetur animi unde
+        sapiente! Repellat aperiam consectetur unde optio, inventore ipsa
+        suscipit culpa id temporibus natus deleniti eum dolorum voluptatem
+        maiores sit molestiae et vero harum ratione voluptatum in laudantium
+        ipsam, perferendis fugiat? Error pariatur eos laborum architecto nemo
+        quibusdam dignissimos expedita in sed esse. Odio at dolore totam
+        corrupti suscipit rerum magnam. Laborum obcaecati, blanditiis architecto
+        praesentium velit odit, beatae unde, rem tenetur debitis animi modi!
+      </p>
+    </div>
+
+    <h2>En bloque</h2>
+    <p class="bloque">Una etiqueta p es una etiqueta de bloque</p>
+    <p class="bloque">Una etiqueta p es una etiqueta de bloque</p>
+
+    <h2>En linea</h2>
+    <a href="#" class="linea">Una a es una etiqueta de linea</a>
+    <a href="#" class="linea">Una a es una etiqueta de linea</a>
+
+    <h2>Positions</h2>
+    <span>static</span>
+
+    <div class="container">
+      <div class="caja"></div>
+      <div class="caja"></div>
+      <div class="caja"></div>
+      <div class="caja"></div>
+    </div>
+
+    <span>relative</span>
+    <div class="container">
+      <div class="caja"></div>
+      <div class="caja"></div>
+      <div class="caja relative"></div>
+      <div class="caja"></div>
+      <div class="caja"></div>
+    </div>
+
+    <div>
+      <span>absolute</span>
+      <div class="container padre">
+        <div class="caja"></div>
+        <div class="caja"></div>
+        <div class="caja absolute"></div>
+        <div class="caja"></div>
+        <div class="caja"></div>
+      </div>
+
+      <span>fixed</span>
+      <div class="fixed">w</div>
+
+      <div class="selector">
+        <p>Hola soy el hijo directo</p>
+        <span>
+          <p>Hola soy otro p</p>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>

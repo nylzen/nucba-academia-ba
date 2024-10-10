@@ -1,0 +1,154 @@
+/* * { */
+  /* border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  /* Box sizing */
+  /* box-sizing: content-box; */
+  /* box-sizing: border-box ; */
+/* } */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* border: 1px solid blue; */
+}
+
+body {
+  background-color: #131415;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* En bloque y en linea */
+.box {
+  background: crimson;
+  width: 300px;
+  height: 300px;
+
+  /* Margin */
+  /* margin: 20px; */
+  /* margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px; */
+  /* margin: 20px 0; */
+  /* 2 valores: arriba/abajo - costados */
+  /* margin: 0 20px ; */
+  /* margin: 50px 0 100px; */
+  /* 3 valores: arriba - costados - abajo */
+  margin: 10px 20px 50px 40px;
+  /* 4 valores: Sentido horario arrancando de arriba */
+
+  /* Padding */
+  /* padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 70px; */
+  padding: 50px;
+  /* Es igual los atajos que margin */
+
+  /* Border */
+  /* border: 10px solid blue; */
+  border-width: 10px;
+  border-color: blue;
+  border-style: dashed;
+  /* border-radius: 8px; */
+}
+
+/*
+  Box model:
+  - margin
+  - padding
+  - border
+  - content
+
+  -- Box sizing: por defecto content-box
+  - Cambiamos a border-box
+*/
+
+.caja-overflow {
+  width: 300px;
+  /* max-width: 300px; */
+  height: 200px;
+  background-color: crimson;
+
+  /* overflow: hidden ; */
+  /* overflow: scroll; */
+  overflow-y: scroll;
+  /* overflow-x: auto; */
+}
+
+/* Layout */
+/* En bloque y en linea */
+.bloque {
+  display: inline;
+  border: 1px solid blue;
+}
+
+.linea {
+  display: block;
+  border: 1px solid red;
+}
+
+/* positions */
+.container {
+  background: #282828;
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  border-radius: 8px;
+  /* top: 100px; */
+  /* left: 100px; */
+}
+
+.relative {
+  position: relative;
+  /* El poder de acceder a sus propiedads top, bottom, left, right */
+  left: 240px;
+  /* top: 40px; */
+  background-color: blueviolet;
+}
+
+.padre {
+  position: relative;
+}
+.absolute {
+  background-color: blueviolet;
+  position: absolute;
+  /* left: 240px; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* top: 0; */
+  /* left: 0; */
+}
+
+.fixed {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border-radius: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Selector */
+
+.selector > p {
+  background-color: red;
+}
