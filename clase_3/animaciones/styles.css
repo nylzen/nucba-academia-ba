@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background: #131415;
+  /* background-color: azure; */
+  color: white;
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+/* img {
+  display: block;
+  width: 100%;
+} */
+
+.logo {
+  width: 50px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 0.5rem;
+  border-bottom: 1px solid #eeeeee14;
+}
+
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Section HERO*/
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  background-color: #282828;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.caja {
+  /* width: 100px; */
+  /* height: 100px; */
+  background-color: crimson;
+  border-radius: 8px;
+  border: 1px solid #e7e7ed62;
+}
+
+.grid {
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+
+/* pseudoclases */
+/* .caja:first-child {
+  background-color: blueviolet;
+} */
+/* .caja:nth-child(odd){
+  background-color: blueviolet;
+} */
+
+/* .caja:nth-child(even){
+  background-color: blueviolet;
+} */
+
+.caja:nth-child(1){
+  background-color: blueviolet;
+  /* grid-column-start: 1;
+  grid-column-end: 5; */
+  /* grid-column: 1/5; */
+  grid-column: span 2;
+  /* grid-row: 1 / 3; */
+  grid-row: span 2
+  /* grid-row: 1/3; */
+}
+
+.caja:nth-child(2){
+  background-color: greenyellow;
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+.caja:nth-child(3){
+  background-color: blue;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* transicion */
+.transitions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
+  /* transition: all .5s; */
+}
+
+/* .box:hover {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  transform: scale(1.2);
+} */
+
+/* Crear una animacion */
+@keyframes nombre {
+  from{
+    opacity: 0;
+    background-color: aquamarine;
+  }
+  to{
+    opacity: 1;
+    background-color: chocolate;
+  }
+}
+
+@keyframes translateX {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    /* transform: translateX(650px); */
+    transform: translateX(670px);
+  }
+}
+
+
+/* .box {
+  animation-name: nombre;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+} */
+
+/* animacion por defecto se ejecuta cuando carga la pagina y solamente 1 sola vez */
+
+.translate {
+  /* animation: translateX 2s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-in-out; */
+  animation: translateX 2s infinite alternate ease-in;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(180deg);
+  }
+}
+
+.rotate {
+  animation: girar 1s infinite alternate;
+}
+
+/* .scale {
+
+} */
+
+.scale:hover {
+  /* transform: scale(1.05) */
+  scale: 1.05;
+}
+
+.skew {
+  transform: skewX(12deg);
+  transform: skewY(20deg);
+}
+
+img {
+  z-index: 3;
+}
+
+/* Animaciones en scroll */
+.scroll-indicator {
+  background: greenyellow;
+  height: 5px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scrollIndicator;
+  animation-timing-function: linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scrollIndicator {
+  /* from{
+    scale: 0 1;
+  } */
+  to {
+    scale: 1 1;
+  }
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+article img {
+  width: 100%;
+  border-radius: 8px;
+  translate: 0 180px;
+  /* scale: 0 0; */
+  opacity: 0;
+  animation: fadeIn linear forwards;
+  animation-timeline: view();
+  /* start y end */
+  animation-range: 200px 500px;
+}
+
+@keyframes fadeIn {
+  to {
+    /* scale: 1 1; */
+    translate: 0 0;
+    opacity: 1;
+  }
+
+}
