@@ -1,0 +1,313 @@
+:root {
+  /* --background: #052032; */
+  --background: white;
+  --accent-color: #e63344;
+  /* --text: #bce2ec; */
+  --text: #131415;
+  --text-white: #fff;
+
+  /* Fonts */
+  --font-family: "Poppins";
+  --mobile-title: 34px;
+  --desktop-title: 48px;
+
+  --font-sm: 12px;
+  --subtitle: 32px;
+  --bold: 800;
+  --medium: 600;
+  --thin: 300;
+
+  /* Misc */
+  --rounded-sm: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: var(--font-family), sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  padding: 0 1rem;
+}
+
+/* =========================================== */
+/* ================= UTILS =================== */
+/* =========================================== */
+.btn {
+  padding: 10px 20px;
+  border-radius: var(--rounded-sm);
+  border: none;
+  cursor: pointer;
+  display: block;
+  width: fit-content;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: var(--text-white);
+}
+
+.btn-secondary {
+  border: 1px solid var(--text);
+}
+
+/* =========================================== */
+/* ================ Header =================== */
+/* =========================================== */
+.header {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  /* padding-inline: 20px; */
+  /* padding-block: 10px; */
+}
+
+.header .menu-bars {
+  width: 35px;
+  /* font-size: 4rem; */
+}
+
+.header-logo {
+  font-size: 18px;
+  font-weight: var(--medium);
+  text-transform: uppercase;
+}
+
+.nav-header {
+  display: none;
+}
+
+/* =========================================== */
+/* ================== HERO =================== */
+/* =========================================== */
+
+#hero {
+  padding: 5rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+/* =========================================== */
+/* ================= DISCOVER ================ */
+/* =========================================== */
+#discover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.discover-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.discover-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.discover-cards img {
+  width: 100%;
+  display: block;
+}
+
+/* =========================================== */
+/* ================= PRODUCTS ================ */
+/* =========================================== */
+
+#products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  gap: 2rem;
+}
+
+.products-info h2{
+  font-size: var(--mobile-title);
+}
+
+.view-all {
+  display: none;
+}
+
+.products-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  gap: 1rem;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+
+.producto img {
+  width: 100%;
+  display: block;
+}
+
+.producto .price {
+  font-weight: var(--medium);
+  color: var(--accent-color);
+  font-size: 24px;
+}
+
+/* =========================================== */
+/* ================= BENEFITS ================ */
+/* =========================================== */
+#benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.benefits-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.benefits-title h3 {
+  font-size: var(--mobile-title);
+}
+
+.benefits-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* =========================================== */
+/* =================== FAQ =================== */
+/* =========================================== */
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.faq-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-info h2 {
+  font-size: var(--mobile-title);
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+details {
+  border-bottom: 1px solid var(--text);
+  cursor: pointer;
+  padding: 0.5rem 0;
+  user-select: none;
+}
+
+summary {
+  padding: 1rem 0;
+}
+
+/* =========================================== */
+/* =================FOOTER =================== */
+/* =========================================== */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.links-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rrss {
+  display: flex;
+  gap: 1rem;
+}
+
+hr {
+  width: 100%;
+}
+
+footer p {
+  font-size: var(--font-sm);
+}

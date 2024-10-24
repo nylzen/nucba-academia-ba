@@ -1,0 +1,117 @@
+@media (min-width: 992px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #131415;
+  }
+
+  /* Header */
+  .nav-header {
+    display: flex;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu-bars {
+    display: none;
+  }
+
+  /* Hero */
+  #hero {
+    padding-top: 7rem;
+    gap: 5rem;
+  }
+  .hero-info,
+  .discover-info {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .hero-info h1,
+  .discover-info h2 {
+    font-size: var(--desktop-title);
+  }
+
+  #hero img {
+    border-radius: var(--rounded-sm);
+  }
+
+
+  /* Discover */
+  #discover {
+    gap: 5rem;
+  }
+
+  .discover-cards {
+    flex-direction: row;
+  }
+
+  /* products */
+  .view-all {
+    display: block;
+  }
+
+  .products-info {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .products-container {
+    gap: 2rem;
+  }
+  .producto {
+    width: 100%;
+  }
+
+  /* Benefits */
+  #benefits {
+    flex-direction: row;
+    gap: 4rem;
+    padding: 5rem 0;
+  }
+
+  .benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+
+  }
+
+  .benefits-items {
+    flex-direction: row;
+  }
+
+  /* faq */
+
+  #faq {
+    flex-direction: row;
+  }
+
+  /* footer */
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    gap: 2rem;
+  }
+
+  .links-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-footer {
+    flex-direction: row;
+  }
+}
